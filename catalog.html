@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Default</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <!-- Fonts END -->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <div class="wrapper fx-column">
+    
+    <!-- Header -->
+
+    <header class="header speed">
+      <div class="container fx fx-between align-center">
+
+        <!-- Logo -->
+
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+        </div>
+
+        <!-- Search -->
+
+        <form action="#" class="form search fx align-center">
+          <label class="form__field search__input"><input type="text" placeholder="Введите ID или название" /></label>
+          <label class="form__field select arrow-down">
+            <select>
+              <option>Счета</option>
+              <option>Счета 1</option>
+              <option>Счета 2</option>
+            </select>
+          </label>
+          <button class="search__btn"></button>
+        </form>
+
+        <!-- Panel -->
+        
+        <div class="panel fx align-center">
+          <div class="panel__group fx align-center">
+            <a href="#" class="panel__item pc-hide flex-center">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2 13.8L19.7 18.3C20.1 18.7 20.1 19.3 19.7 19.7C19.5 19.9 19.2 20 19 20C18.8 20 18.5 19.9 18.3 19.7L13.8 15.2C12.3 16.3 10.5 17 8.5 17C3.8 17 0 13.2 0 8.5C0 3.8 3.8 0 8.5 0C13.2 0 17 3.8 17 8.5C17 10.5 16.3 12.4 15.2 13.8ZM8.49999 2C4.89999 2 1.99999 4.9 1.99999 8.5C1.99999 12.1 4.89999 15 8.49999 15C10.3 15 11.9 14.3 13.1 13.1C14.3 11.9 15 10.3 15 8.5C15 4.9 12.1 2 8.49999 2Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item flex-center">
+              <span class="panel__quantity">4</span>
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20C9.55229 20 10 19.5523 10 19V18C10 16.8954 10.8954 16 12 16H16C18.2091 16 20 14.2091 20 12V4C20 1.79086 18.2091 0 16 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H5C5.55228 16 6 15.5523 6 15C6 14.4477 5.55228 14 5 14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H16C17.1046 2 18 2.89543 18 4V12C18 13.1046 17.1046 14 16 14H12C9.79086 14 8 15.7909 8 18V19C8 19.5523 8.44771 20 9 20ZM9 8C9 8.55229 9.44771 9 10 9C10.5523 9 11 8.55229 11 8C11 7.44772 10.5523 7 10 7C9.44771 7 9 7.44772 9 8ZM6 9C5.44772 9 5 8.55229 5 8C5 7.44772 5.44772 7 6 7C6.55228 7 7 7.44772 7 8C7 8.55229 6.55228 9 6 9ZM13 8C13 8.55229 13.4477 9 14 9C14.5523 9 15 8.55229 15 8C15 7.44772 14.5523 7 14 7C13.4477 7 13 7.44772 13 8Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item tb-hide flex-center active">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4C0 1.79086 1.79086 0 4 0ZM4 2C2.89543 2 2 2.89543 2 4V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V4C18 2.89543 17.1046 2 16 2H4ZM6 15C6.55228 15 7 14.5523 7 14V12C7 11.4477 6.55228 11 6 11C5.44772 11 5 11.4477 5 12V14C5 14.5523 5.44772 15 6 15ZM11 14C11 14.5523 10.5523 15 10 15C9.44771 15 9 14.5523 9 14V9C9 8.44771 9.44771 8 10 8C10.5523 8 11 8.44771 11 9V14ZM14 15C14.5523 15 15 14.5523 15 14V6C15 5.44772 14.5523 5 14 5C13.4477 5 13 5.44772 13 6V14C13 14.5523 13.4477 15 14 15Z"/>
+              </svg>
+            </a>
+            <button class="navbar-toggle">
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+            </button>
+          </div>
+          <div class="user">
+            <a href="#" class="user__info text-right arrow-down">
+              <p class="user__name">Сергей Семенов</p>
+              <p class="user__position">Менеджер</p>
+            </a>
+            <div class="user__nav">
+              <ul class="user__list">
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    
+    <!-- Main -->
+    
+    <main class="main fx">
+      <div class="container fx">
+
+        <!-- Aside -->
+
+        <aside class="aside">
+          <div class="user pc-hide">
+            <a href="#" class="fx align-center">
+              <i class="user__icon"></i>
+              <div class="user__info">
+                <p class="user__name">Сергей Семенов</p>
+                <p class="user__position">Менеджер</p>
+              </div>
+            </a>
+          </div>
+          <ul class="aside__list">
+            <li class="aside__item"><a href="#" class="aside__link active"><i class="aside__icon aside__icon--score"></i>Счета</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--coming"></i>Приход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--consumption"></i>Расход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--company"></i>Компании</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--bills"></i>Платежки</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--goods"></i>Товары</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--catalog"></i>Каталог</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--transit"></i>Транзит</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--reserve"></i>Резерв</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--cash"></i>Наличные</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--logs"></i>Логи</a></li>
+            <li class="aside__item"><hr></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--users"></i>Пользователи</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--access"></i>Маски доступа</a></li>
+          </ul>
+        </aside>
+
+        <!-- Box -->
+
+        <div class="main__box catalog">
+          <div class="catalog__top fx align-center">
+            <p class="title catalog__title">
+              <button class="title__btn">
+                <svg viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12.6V7.2C18 5.21177 16.3882 3.6 14.4 3.6H11.5687C10.8869 3.6 10.2636 3.2148 9.95872 2.60498L9.40249 1.49252C8.94513 0.577806 8.01022 0 6.98754 0H2.7C1.20883 0 0 1.20883 0 2.7V12.6C0 14.5882 1.61177 16.2 3.6 16.2H14.4C16.3882 16.2 18 14.5882 18 12.6ZM8.34875 3.40997C8.38106 3.47459 8.41516 3.53795 8.45097 3.6H4.5C4.00294 3.6 3.6 4.00294 3.6 4.5C3.6 4.99706 4.00294 5.4 4.5 5.4H14.4C15.3941 5.4 16.2 6.20589 16.2 7.2V12.6C16.2 13.5941 15.3941 14.4 14.4 14.4H3.6C2.60589 14.4 1.8 13.5941 1.8 12.6V2.7C1.8 2.20294 2.20294 1.8 2.7 1.8H6.98754C7.32843 1.8 7.64007 1.9926 7.79252 2.29751L8.34875 3.40997Z"/>
+                </svg>
+                Каталог
+              </button>
+            </p>
+            <a href="#" class="btn-tuning">
+              <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4 0H17.6C20.0301 0 22 1.96995 22 4.4V17.6C22 20.0301 20.0301 22 17.6 22H4.4C1.96995 22 0 20.0301 0 17.6V4.4C0 1.96995 1.96995 0 4.4 0ZM8.8 16.5V10.8122C10.0817 10.3592 11 9.13684 11 7.7C11 5.87746 9.52254 4.4 7.7 4.4C5.87746 4.4 4.4 5.87746 4.4 7.7C4.4 9.13684 5.31829 10.3592 6.6 10.8122V16.5C6.6 17.1075 7.09249 17.6 7.7 17.6C8.30751 17.6 8.8 17.1075 8.8 16.5ZM17.6 14.3C17.6 12.8632 16.6817 11.6408 15.4 11.1878V5.5C15.4 4.89249 14.9075 4.4 14.3 4.4C13.6925 4.4 13.2 4.89249 13.2 5.5V11.1878C11.9183 11.6408 11 12.8632 11 14.3C11 16.1225 12.4775 17.6 14.3 17.6C16.1225 17.6 17.6 16.1225 17.6 14.3ZM2.20054 4.40003C2.20054 3.18501 3.18551 2.20003 4.40054 2.20003H17.6005C18.8156 2.20003 19.8005 3.18501 19.8005 4.40003V17.6C19.8005 18.8151 18.8156 19.8 17.6005 19.8H4.40054C3.18551 19.8 2.20054 18.8151 2.20054 17.6V4.40003ZM7.7 8.8C8.30751 8.8 8.8 8.30751 8.8 7.7C8.8 7.09249 8.30751 6.6 7.7 6.6C7.09249 6.6 6.6 7.09249 6.6 7.7C6.6 8.30751 7.09249 8.8 7.7 8.8ZM15.4005 14.3C15.4005 14.9075 14.908 15.4 14.3005 15.4C13.693 15.4 13.2005 14.9075 13.2005 14.3C13.2005 13.6925 13.693 13.2 14.3005 13.2C14.908 13.2 15.4005 13.6925 15.4005 14.3Z"></path>
+              </svg>
+            </a>
+            <a href="#" class="btn-filter flex-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9168 4.25001V8.34338C20.9168 9.38823 20.3946 10.364 19.5253 10.9435L15.5945 13.564C15.015 13.9504 14.6668 14.6009 14.6668 15.2975V16.75C14.6668 19.0512 12.8014 20.9167 10.5002 20.9167C8.19898 20.9167 6.3335 19.0512 6.3335 16.75V15.2975C6.3335 14.6009 5.98537 13.9504 5.40579 13.564L1.47506 10.9435C0.605687 10.364 0.0834961 9.38823 0.0834961 8.34338V4.25001C0.0834961 1.63881 4.74989 0.0833435 10.5002 0.0833435C16.2504 0.0833435 20.9168 1.63881 20.9168 4.25001ZM2.16667 6.88301V8.34335C2.16667 8.69164 2.34073 9.01688 2.63052 9.21007L6.56125 11.8306C7.72041 12.6033 8.41667 13.9043 8.41667 15.2974V16.75C8.41667 17.9006 9.34941 18.8333 10.5 18.8333C11.6506 18.8333 12.5833 17.9006 12.5833 16.75V15.2974C12.5833 13.9043 13.2796 12.6033 14.4387 11.8306L18.3695 9.21007C18.6593 9.01688 18.8333 8.69164 18.8333 8.34335V6.88301C16.9324 7.87081 13.9064 8.41665 10.5 8.41665C7.09362 8.41665 4.0676 7.87081 2.16667 6.88301ZM18.8333 4.25C18.8333 5.09058 15.1051 6.33333 10.5 6.33333C5.89494 6.33333 2.16667 5.09058 2.16667 4.25C2.16667 3.40942 5.89494 2.16667 10.5 2.16667C15.1051 2.16667 18.8333 3.40942 18.8333 4.25Z"></path>
+              </svg>
+            </a>
+            <div class="catalog__btns fx">
+              <a href="#" class="btn btn_white">Создание группы</a>
+              <a href="#" class="btn btn_white">Импорт данных</a>
+              <a href="#" class="btn btn_white">Логи</a>
+            </div>
+          </div>
+          <div class="party fx">
+            <div class="strainer">
+              <div class="strainer__item">
+                <p class="title-medium">Продавец</p>
+                <div class="check check_dark">
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" checked="" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">VeryTec <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Rozetka <span class="check__nums">(253)</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="strainer__item strainer__item--brand scrollbar-style">
+                <p class="title-medium">Бренд</p>
+                <button class="strainer__custom">Алфавитный указатель</button>
+                <div class="check check_dark">
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" checked="" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Aerocool <span class="check__nums">(253)</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="strainer__item">
+                <p class="title-medium">Цена</p>
+                <div class="range">
+                  <div class="range__body">
+                    <button class="range__btn flex-center" style="left: 0;"><span></span><span></span><span></span></button>
+                    <div class="range__line"><span class="range__interior" style="width: 50%;"></span></div>
+                    <button class="range__btn flex-center" style="right: 0;"><span></span><span></span><span></span></button>
+                  </div>
+                  <div class="range__bottom fx fx-between">
+                    <span class="range__nums">0</span>
+                    <span class="range__nums">12 000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="strainer__item strainer__item--borderNone">
+                <p class="title-medium">Мощность</p>
+                <div class="check check_dark">
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" checked="" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">125 <span class="check__nums">(253)</span></span>
+                  </label>
+                  <label class="check__item fx align-center">
+                    <input type="checkbox" name="strainer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">150 <span class="check__nums">(253)</span></span>
+                  </label>
+                </div>
+              </div>
+              <p class="strainer__btn"><a href="#" class="btn btn_white">Применить</a></p>
+            </div>
+            <div class="party__box">
+              <div class="customization fx">
+                <div class="customization__item">
+                  <p class="title-medium">Показать товары</p>
+                  <div class="check check_dark fx">
+                    <label class="check__item fx align-center">
+                      <input type="checkbox" name="strainer" />
+                      <span class="check__mark"></span>
+                      <span class="check__name">Активные</span>
+                    </label>
+                    <label class="check__item fx align-center">
+                      <input type="checkbox" name="strainer" />
+                      <span class="check__mark"></span>
+                      <span class="check__name">Неактивные</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="customization__item">
+                  <p class="title-medium">Экпорт товара</p>
+                  <div class="check check_dark fx">
+                    <label class="check__item fx align-center">
+                      <input type="checkbox" name="strainer" />
+                      <span class="check__mark"></span>
+                      <span class="check__name">Экспортируется</span>
+                    </label>
+                    <label class="check__item fx align-center">
+                      <input type="checkbox" name="strainer" />
+                      <span class="check__mark"></span>
+                      <span class="check__name">Не экспортируется</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="customization__item">
+                  <p class="title-medium">Количество</p>
+                  <div class="check check_dark fx align-center">
+                    <label class="check__item fx align-center">
+                      <input type="checkbox" name="strainer" />
+                      <span class="check__mark"></span>
+                    </label>
+                    <label class="form__field"><input type="text" value="<0" /></label>
+                  </div>
+                </div>
+                <div class="customization__item customization__item--btn fx align-center">
+                  <a href="#" class="btn btn_white">Фильтровать</a>
+                </div>
+              </div>
+              <div class="table">
+                <div class="table__wrap">
+                  <ul class="table__case table__case--cell-btns">
+                    <li class="table__head">
+                      <div class="cell cell_1">Фото</div>
+                      <div class="cell cell_2">Part</div>
+                      <div class="cell cell_3 text-center">Производитель</div>
+                      <div class="cell cell_4">Название</div>
+                      <div class="cell cell_5">Категория</div>
+                      <div class="cell cell_6 text-center">Кол-во</div>
+                      <div class="cell cell_7 text-center">Экспорт</div>
+                      <div class="cell cell_8">Создан</div>
+                      <div class="cell cell_9">Изменен</div>
+                      <div class="cell cell_10"></div>
+                    </li>
+                    <li class="table__item">
+                      <div class="cell cell_1"><span class="table__name">Фото</span><div class="catalog__img"><img src="img/other/catalog.png" alt="Фото"></div></div>
+                      <div class="cell cell_2"><span class="table__name">Part</span>SR21Z</div>
+                      <div class="cell cell_3 text-center"><span class="table__name">Производитель</span>Intel</div>
+                      <div class="cell cell_4"><span class="table__name">Название</span>Xeon Processor E7-8860 v3 (40M Cache, 2.20 GHz)</div>
+                      <div class="cell cell_5"><span class="table__name">Категория</span>
+                        <div class="category">
+                          <p class="category__item"><a href="#">Комплектующие</a></p>
+                          <p class="category__item"><a href="#">Процессоры</a></p>
+                          <p class="category__item"><a href="#">Socket FCLGA1356</a></p>
+                        </div>
+                      </div>
+                      <div class="cell cell_6 text-center"><span class="table__name">Кол-во</span><div class="green">1</div></div>
+                      <div class="cell cell_7 text-center"><span class="table__name">Экспорт</span>-</div>
+                      <div class="cell cell_8"><span class="table__name">Создан</span> <div class="catalog__time">2017-05-17 <br />12:11:54</div></div>
+                      <div class="cell cell_9"><span class="table__name">Изменен</span> <div class="catalog__time">2021-03-17 <br />16:32:01</div></div>
+                      <div class="cell cell_10 table__buttons"><a href="#" class="edit"></a></div>
+                    </li>
+                    <li class="table__item">
+                      <div class="cell cell_1"><span class="table__name">Фото</span><div class="catalog__img"><img src="img/other/catalog.png" alt="Фото"></div></div>
+                      <div class="cell cell_2"><span class="table__name">Part</span>SR21Z</div>
+                      <div class="cell cell_3 text-center"><span class="table__name">Производитель</span>Intel</div>
+                      <div class="cell cell_4"><span class="table__name">Название</span>Xeon Processor E7-8860 v3 (40M Cache, 2.20 GHz)</div>
+                      <div class="cell cell_5"><span class="table__name">Категория</span>
+                        <div class="category">
+                          <p class="category__item"><a href="#">Комплектующие</a></p>
+                          <p class="category__item"><a href="#">Процессоры</a></p>
+                          <p class="category__item"><a href="#">Socket FCLGA1356</a></p>
+                        </div>
+                      </div>
+                      <div class="cell cell_6 text-center"><span class="table__name">Кол-во</span><div class="green">1</div></div>
+                      <div class="cell cell_7 text-center"><span class="table__name">Экспорт</span>-</div>
+                      <div class="cell cell_8"><span class="table__name">Создан</span> <div class="catalog__time">2017-05-17 <br />12:11:54</div></div>
+                      <div class="cell cell_9"><span class="table__name">Изменен</span> <div class="catalog__time">2021-03-17 <br />16:32:01</div></div>
+                      <div class="cell cell_10 table__buttons"><a href="#" class="edit"></a></div>
+                    </li>
+                    <li class="table__item">
+                      <div class="cell cell_1"><span class="table__name">Фото</span><div class="catalog__img"><img src="img/other/catalog.png" alt="Фото"></div></div>
+                      <div class="cell cell_2"><span class="table__name">Part</span>SR21Z</div>
+                      <div class="cell cell_3 text-center"><span class="table__name">Производитель</span>Intel</div>
+                      <div class="cell cell_4"><span class="table__name">Название</span>Xeon Processor E7-8860 v3 (40M Cache, 2.20 GHz)</div>
+                      <div class="cell cell_5"><span class="table__name">Категория</span>
+                        <div class="category">
+                          <p class="category__item"><a href="#">Комплектующие</a></p>
+                          <p class="category__item"><a href="#">Процессоры</a></p>
+                          <p class="category__item"><a href="#">Socket FCLGA1356</a></p>
+                        </div>
+                      </div>
+                      <div class="cell cell_6 text-center"><span class="table__name">Кол-во</span><div class="green">1</div></div>
+                      <div class="cell cell_7 text-center"><span class="table__name">Экспорт</span>-</div>
+                      <div class="cell cell_8"><span class="table__name">Создан</span> <div class="catalog__time">2017-05-17 <br />12:11:54</div></div>
+                      <div class="cell cell_9"><span class="table__name">Изменен</span> <div class="catalog__time">2021-03-17 <br />16:32:01</div></div>
+                      <div class="cell cell_10 table__buttons"><a href="#" class="edit"></a></div>
+                    </li>
+                    <li class="table__item">
+                      <div class="cell cell_1"><span class="table__name">Фото</span><div class="catalog__img"><img src="img/other/catalog.png" alt="Фото"></div></div>
+                      <div class="cell cell_2"><span class="table__name">Part</span>SR21Z</div>
+                      <div class="cell cell_3 text-center"><span class="table__name">Производитель</span>Intel</div>
+                      <div class="cell cell_4"><span class="table__name">Название</span>Xeon Processor E7-8860 v3 (40M Cache, 2.20 GHz)</div>
+                      <div class="cell cell_5"><span class="table__name">Категория</span>
+                        <div class="category">
+                          <p class="category__item"><a href="#">Комплектующие</a></p>
+                          <p class="category__item"><a href="#">Процессоры</a></p>
+                          <p class="category__item"><a href="#">Socket FCLGA1356</a></p>
+                        </div>
+                      </div>
+                      <div class="cell cell_6 text-center"><span class="table__name">Кол-во</span><div class="green">1</div></div>
+                      <div class="cell cell_7 text-center"><span class="table__name">Экспорт</span>-</div>
+                      <div class="cell cell_8"><span class="table__name">Создан</span> <div class="catalog__time">2017-05-17 <br />12:11:54</div></div>
+                      <div class="cell cell_9"><span class="table__name">Изменен</span> <div class="catalog__time">2021-03-17 <br />16:32:01</div></div>
+                      <div class="cell cell_10 table__buttons"><a href="#" class="edit"></a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal modal_quantity">
+    <div class="fullScreen flex-center">
+      <div class="modal__box">
+        <button class="close close_modal">
+          <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 6.17417L13.3996 0.274587C13.7657 -0.0915291 14.3593 -0.0915291 14.7254 0.274587C15.0915 0.640704 15.0915 1.2343 14.7254 1.60041L8.82582 7.5L14.7254 13.3996C15.0915 13.7657 15.0915 14.3593 14.7254 14.7254C14.3593 15.0915 13.7657 15.0915 13.3996 14.7254L7.5 8.82582L1.60041 14.7254C1.2343 15.0915 0.640704 15.0915 0.274587 14.7254C-0.0915291 14.3593 -0.0915291 13.7657 0.274587 13.3996L6.17417 7.5L0.274587 1.60041C-0.0915291 1.2343 -0.0915291 0.640704 0.274587 0.274587C0.640704 -0.0915291 1.2343 -0.0915291 1.60041 0.274587L7.5 6.17417Z"></path>
+          </svg>
+        </button>
+        <p class="modal__title">Изменить кол-во для товаров группы</p>
+        <form action="#" class="form">
+          <label class="form__field form__field--bb"><input type="text" placeholder="Part" /></label>
+          <label class="form__field form__field--bb"><input type="text" placeholder="Количество" /></label>
+          <p class="modal__btn text-center"><button class="btn btn_green">Применить</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+  <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

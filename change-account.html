@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Default</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <!-- Fonts END -->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <div class="wrapper fx-column">
+    
+    <!-- Header -->
+
+    <header class="header speed">
+      <div class="container fx fx-between align-center">
+
+        <!-- Logo -->
+
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+        </div>
+
+        <!-- Search -->
+
+        <form action="#" class="form search fx align-center">
+          <label class="form__field search__input"><input type="text" placeholder="Введите ID или название" /></label>
+          <label class="form__field select arrow-down">
+            <select>
+              <option>Счета</option>
+              <option>Счета 1</option>
+              <option>Счета 2</option>
+            </select>
+          </label>
+          <button class="search__btn"></button>
+        </form>
+
+        <!-- Panel -->
+        
+        <div class="panel fx align-center">
+          <div class="panel__group fx align-center">
+            <a href="#" class="panel__item pc-hide flex-center">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2 13.8L19.7 18.3C20.1 18.7 20.1 19.3 19.7 19.7C19.5 19.9 19.2 20 19 20C18.8 20 18.5 19.9 18.3 19.7L13.8 15.2C12.3 16.3 10.5 17 8.5 17C3.8 17 0 13.2 0 8.5C0 3.8 3.8 0 8.5 0C13.2 0 17 3.8 17 8.5C17 10.5 16.3 12.4 15.2 13.8ZM8.49999 2C4.89999 2 1.99999 4.9 1.99999 8.5C1.99999 12.1 4.89999 15 8.49999 15C10.3 15 11.9 14.3 13.1 13.1C14.3 11.9 15 10.3 15 8.5C15 4.9 12.1 2 8.49999 2Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item flex-center">
+              <span class="panel__quantity">4</span>
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20C9.55229 20 10 19.5523 10 19V18C10 16.8954 10.8954 16 12 16H16C18.2091 16 20 14.2091 20 12V4C20 1.79086 18.2091 0 16 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H5C5.55228 16 6 15.5523 6 15C6 14.4477 5.55228 14 5 14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H16C17.1046 2 18 2.89543 18 4V12C18 13.1046 17.1046 14 16 14H12C9.79086 14 8 15.7909 8 18V19C8 19.5523 8.44771 20 9 20ZM9 8C9 8.55229 9.44771 9 10 9C10.5523 9 11 8.55229 11 8C11 7.44772 10.5523 7 10 7C9.44771 7 9 7.44772 9 8ZM6 9C5.44772 9 5 8.55229 5 8C5 7.44772 5.44772 7 6 7C6.55228 7 7 7.44772 7 8C7 8.55229 6.55228 9 6 9ZM13 8C13 8.55229 13.4477 9 14 9C14.5523 9 15 8.55229 15 8C15 7.44772 14.5523 7 14 7C13.4477 7 13 7.44772 13 8Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item tb-hide flex-center active">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4C0 1.79086 1.79086 0 4 0ZM4 2C2.89543 2 2 2.89543 2 4V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V4C18 2.89543 17.1046 2 16 2H4ZM6 15C6.55228 15 7 14.5523 7 14V12C7 11.4477 6.55228 11 6 11C5.44772 11 5 11.4477 5 12V14C5 14.5523 5.44772 15 6 15ZM11 14C11 14.5523 10.5523 15 10 15C9.44771 15 9 14.5523 9 14V9C9 8.44771 9.44771 8 10 8C10.5523 8 11 8.44771 11 9V14ZM14 15C14.5523 15 15 14.5523 15 14V6C15 5.44772 14.5523 5 14 5C13.4477 5 13 5.44772 13 6V14C13 14.5523 13.4477 15 14 15Z"/>
+              </svg>
+            </a>
+            <button class="navbar-toggle">
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+            </button>
+          </div>
+          <div class="user">
+            <a href="#" class="user__info text-right arrow-down">
+              <p class="user__name">Сергей Семенов</p>
+              <p class="user__position">Менеджер</p>
+            </a>
+            <div class="user__nav">
+              <ul class="user__list">
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    
+    <!-- Main -->
+    
+    <main class="main fx">
+      <div class="container fx">
+
+        <!-- Aside -->
+
+        <aside class="aside">
+          <div class="user pc-hide">
+            <a href="#" class="fx align-center">
+              <i class="user__icon"></i>
+              <div class="user__info">
+                <p class="user__name">Сергей Семенов</p>
+                <p class="user__position">Менеджер</p>
+              </div>
+            </a>
+          </div>
+          <ul class="aside__list">
+            <li class="aside__item"><a href="#" class="aside__link active"><i class="aside__icon aside__icon--score"></i>Счета</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--coming"></i>Приход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--consumption"></i>Расход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--company"></i>Компании</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--bills"></i>Платежки</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--goods"></i>Товары</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--catalog"></i>Каталог</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--transit"></i>Транзит</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--reserve"></i>Резерв</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--cash"></i>Наличные</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--logs"></i>Логи</a></li>
+            <li class="aside__item"><hr></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--users"></i>Пользователи</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--access"></i>Маски доступа</a></li>
+          </ul>
+        </aside>
+
+        <!-- Box -->
+
+        <div class="main__box change-account">
+          <a href="#data" class="btn-info">
+            <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 -7.86805e-07C13.9706 -3.52265e-07 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 3.52265e-07 13.9706 7.86805e-07 9C1.22135e-06 4.02944 4.02944 -1.22135e-06 9 -7.86805e-07ZM9 1.8C5.02355 1.8 1.8 5.02355 1.8 9C1.8 12.9764 5.02355 16.2 9 16.2C12.9765 16.2 16.2 12.9765 16.2 9C16.2 5.02355 12.9765 1.8 9 1.8ZM9 3.6C9.49706 3.6 9.9 4.00294 9.9 4.5C9.9 4.99706 9.49706 5.4 9 5.4C8.50295 5.4 8.1 4.99706 8.1 4.5C8.1 4.00294 8.50295 3.6 9 3.6ZM9.9 12.6C9.9 13.0971 9.49706 13.5 9 13.5C8.50294 13.5 8.1 13.0971 8.1 12.6L8.1 8.1C8.1 7.60294 8.50294 7.2 9 7.2C9.49706 7.2 9.9 7.60294 9.9 8.1L9.9 12.6Z"/>
+            </svg>
+          </a>
+          <p class="title">Изменение счета №14732</p>
+          <div class="change-account__top fx">
+            <div class="change-account__edit">
+              <label class="form__field form__field--bb form__field--name"><span class="form__name">Номер</span><input type="text" value="147320" /></label>
+              <label class="form__field form__field--bb form__field--date form__field--name"><span class="form__name">Дата</span><input type="text" value="23.03.21" /></label>
+              <label class="form__field form__field--bb form__field--name"><span class="form__name">Сумма</span><input type="text" value="0" /><span class="form__currency">руб.</span></label>
+              <label class="form__field form__field--bb form__field--name"><span class="form__name">Комиссия ЯМ</span><input type="text" value="0" /><span class="form__currency">руб.</span></label>
+              <label class="form__field form__field--bb form__field--name"><span class="form__name">Затраты нал</span><input type="text" value="0" /><span class="form__currency">руб.</span></label>
+              <label class="form__field form__field--bb form__field--name"><span class="form__name">Затраты бнл</span><input type="text" value="0" /><span class="form__currency">руб.</span></label>
+            </div>
+            <div class="change-account__data" id="data">
+              <div class="change-account__data-mob">
+                <a href="#close" class="pop-up__bg"></a>
+                <a href="#close" class="pop-up__close">
+                  <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 6.17417L13.3996 0.274587C13.7657 -0.0915291 14.3593 -0.0915291 14.7254 0.274587C15.0915 0.640704 15.0915 1.2343 14.7254 1.60041L8.82582 7.5L14.7254 13.3996C15.0915 13.7657 15.0915 14.3593 14.7254 14.7254C14.3593 15.0915 13.7657 15.0915 13.3996 14.7254L7.5 8.82582L1.60041 14.7254C1.2343 15.0915 0.640704 15.0915 0.274587 14.7254C-0.0915291 14.3593 -0.0915291 13.7657 0.274587 13.3996L6.17417 7.5L0.274587 1.60041C-0.0915291 1.2343 -0.0915291 0.640704 0.274587 0.274587C0.640704 -0.0915291 1.2343 -0.0915291 1.60041 0.274587L7.5 6.17417Z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="change-account__data-box">
+                <p class="title">Информация о заказчике из реквизитов компании:</p>
+                <ul class="change-account__data-list">
+                  <li class="change-account__data-item">
+                    <span class="change-account__data-name">Контактное лицо</span>
+                    <p class="change-account__data-txt">Михайлов Павел Михайлович</p>
+                  </li>
+                  <li class="change-account__data-item">
+                    <span class="change-account__data-name">Телефон</span>
+                    <p class="change-account__data-txt">+79219387807</p>
+                  </li>
+                  <li class="change-account__data-item">
+                    <span class="change-account__data-name">E-Mail</span>
+                    <p class="change-account__data-txt"><a href="mailto:mail@google.com">mail@google.com</a></p>
+                  </li>
+                  <li class="change-account__data-item">
+                    <span class="change-account__data-name">Адрес доставки</span>
+                    <p class="change-account__data-txt">Flip Спб ул. Расстанная д. 23 кв. 9</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="change-account__info">
+            <div class="change-account__info-group fx fx-between fx-wrap">
+              <div class="change-account__info-box">
+                <p class="title"><span>Продавец</span> <strong>ООО "Веритек"</strong></p>
+                <div class="check">
+                  <label class="check__item check__item--big fx align-center">
+                    <input type="checkbox" name="seller" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Сменить продавца</span>
+                  </label>
+                  <label class="check__item check__item--big fx align-center">
+                    <input type="checkbox" name="seller" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Изменить реквизиты</span>
+                  </label>
+                </div>
+              </div>
+              <div class="change-account__info-box">
+                <p class="title"><span>Покупатель</span> <strong>Михайлов Павел Михайлович</strong></p>
+                <div class="check">
+                  <label class="check__item check__item--big fx align-center">
+                    <input type="checkbox" name="buyer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Сменить продавца</span>
+                  </label>
+                  <label class="check__item check__item--big fx align-center">
+                    <input type="checkbox" name="buyer" />
+                    <span class="check__mark"></span>
+                    <span class="check__name">Изменить реквизиты</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="change-account__info-manager fx fx-wrap">
+              <label class="form__field"><textarea placeholder="Основание"></textarea></label>
+              <p>Менеджер: Чекурин Владимир</p>
+            </div>
+          </div>
+          <div class="change-account__products">
+            <p class="title">Товары в счете:</p>
+            <div class="table">
+              <div class="table__wrap">
+                <ul class="table__case table__case--radius table__case--cell-head table__case--cell-btns">
+                  <li class="table__head">
+                    <div class="cell cell_1">№</div>
+                    <div class="cell cell_2">Part</div>
+                    <div class="cell cell_3">Группа</div>
+                    <div class="cell cell_4">Название</div>
+                    <div class="cell cell_5">Цена</div>
+                    <div class="cell cell_6">Кол-во</div>
+                    <div class="cell cell_7">Сумма</div>
+                    <div class="cell cell_8">Документы</div>
+                    <div class="cell cell_9">З.нал</div>
+                    <div class="cell cell_10">З.бнл</div>
+                    <div class="cell cell_11">НДС</div>
+                    <div class="cell cell_12"></div>
+                  </li>
+                  <li class="table__item table__item--product">
+                    <div class="cell cell_1"><span class="table__name">№</span>4.</div>
+                    <div class="cell cell_2"><span class="table__name">Part</span><label class="form__field"><input type="text" value="KVR667D2N5/2G" /></label></div>
+                    <div class="cell cell_3"><span class="table__name">Группа</span></div>
+                    <div class="cell cell_4">
+                      <div class="adding-account__group">
+                        <div class="adding-account__group-select fx fx-between align-center">
+                          <span class="table__name">Название</span>
+                          <label class="form__field select arrow-down">
+                            <select>
+                              <option>Оперативная</option>
+                              <option>Оперативная 1</option>
+                            </select>
+                          </label>
+                          <label class="form__field select arrow-down">
+                            <select>
+                              <option>Kingstone</option>
+                              <option>Kingstone 1</option>
+                            </select>
+                          </label>
+                        </div>
+                        <label class="form__field"><input type="text" value="2GB DDRII-667 Non-ECC CL5 DIMM" /></label>
+                      </div>
+                    </div>
+                    <div class="cell cell_5"><span class="table__name">Цена</span><label class="form__field form__field--mobFix"><input type="text" value="1080" /></label></div>
+                    <div class="cell cell_6"><span class="table__name">Кол-во</span><label class="form__field form__field--mobFix"><input type="text" value="3" /></label></div>
+                    <div class="cell cell_7"><span class="table__name">Сумма</span><label class="form__field form__field--mobFix"><input type="text" value="4240" /></label></div>
+                    <div class="cell cell_8"><span class="table__name">Документы</span>
+                      <div class="table__links">
+                        <p><a href="#">Р#11393/</a></p>
+                        <p><a href="#">П#1041/</a></p>
+                        <p><a href="#">#20903</a></p>
+                      </div>
+                    </div>
+                    <div class="cell cell_9"><span class="table__name">З.нал</span><label class="form__field form__field--mobFix"><input type="text" value="0" /></label></div>
+                    <div class="cell cell_10"><span class="table__name">З.бнл</span><label class="form__field form__field--mobFix"><input type="text" value="0" /></label></div>
+                    <div class="cell cell_11"><span class="table__name">НДС</span><label class="form__field form__field--mobFix"><input type="text" value="20%" /></label></div>
+                    <div class="cell cell_12 table__buttons">
+                      <div class="control fx-column align-center">
+                        <div class="control__arrows">
+                          <a href="#" class="control__item">
+                            <svg viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.12 3.77333L10.3467 8L12.2267 6.12L6.12 0L0 6.12L1.89333 8L6.12 3.77333Z"/>
+                            </svg>
+                          </a>
+                          <a href="#" class="control__item">
+                            <svg viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88977 0L6.11643 4.22667L10.3431 0L12.2364 1.88L6.11643 8L0.00976562 1.88L1.88977 0Z"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <label class="check__item check__item--big fx align-center">
+                          <input type="checkbox" name="change-products" />
+                          <span class="check__mark"></span>
+                        </label>
+                        <a href="#" class="control__remove">
+                          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C8.89543 0 8 0.89543 8 2H1C0.447715 2 0 2.44772 0 3C0 3.55228 0.447715 4 1 4H2V16C2 18.2091 3.79086 20 6 20H14C16.2091 20 18 18.2091 18 16V4H19C19.5523 4 20 3.55228 20 3C20 2.44772 19.5523 2 19 2H12C12 0.89543 11.1046 0 10 0ZM4 16V4H16V16C16 17.1046 15.1046 18 14 18H6C4.89543 18 4 17.1046 4 16ZM11 9C11 8.44771 11.4477 8 12 8C12.5523 8 13 8.44771 13 9V13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13V9ZM8 8C7.44772 8 7 8.44771 7 9V13C7 13.5523 7.44772 14 8 14C8.55229 14 9 13.5523 9 13V9C9 8.44771 8.55229 8 8 8Z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="table__item table__item--bott">
+                    <div class="check">
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="checkbox">
+                        <span class="check__mark"></span>
+                        <span class="check__name">Использовать оптовую цену для поиска</span>
+                      </label>
+                    </div>
+                    <div class="table__btns fx">
+                      <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Добавить товар</a>
+                      <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Добавить Услугу</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="note fx">
+            <div class="note__group">
+              <label class="form__field note__textarea"><textarea placeholder="Примечание к счету"></textarea></label>
+              <label class="form__field"><input type="text" placeholder="Краткая заметка для списка" /></label>
+            </div>
+            <div class="note__box">
+              <div class="change-account__score fx align-center">
+                <p class="title-medium">Счет</p>
+                <div class="change-account__options fx">
+                  <a href="#" class="btn btn_white flex-center"><i class="seal-icon seal-icon_seal"></i>С печатью</a>
+                  <a href="#" class="btn btn_white flex-center"><i class="seal-icon seal-icon_seal-no"></i>Без печати</a>
+                </div>
+              </div>
+              <div class="change-account__contract fx align-center">
+                <p class="title-medium">Договор</p>
+                <div class="change-account__options fx">
+                  <a href="#" class="btn btn_white flex-center"><i class="seal-icon seal-icon_seal"></i>С печатью</a>
+                  <a href="#" class="btn btn_white flex-center"><i class="seal-icon seal-icon_seal-no"></i>Без печати</a>
+                </div>
+              </div>
+              <div class="change-account__information">
+                <p class="title-medium">Информация к счету:</p>
+                <div class="change-account__information-box">
+                  <p><span>Всего 1 наименование товара</span> в кол-ве 3 шт. стоимостью 5 460,00 руб.</p>
+                  <p><span>Расход (1):</span> Накладная 11086 (1) 5 460,00. <span>Всего на 5 460,00 руб.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pane change-account__panel fx fx-between align-center">
+            <div class="change-account__relations fx align-center">
+              <div class="account-action fx">
+                <a href="#" class="account-action__item account-action__item--one"></a>
+                <a href="#" class="account-action__item account-action__item--two"></a>
+                <a href="#" class="account-action__item account-action__item--three"></a>
+              </div>
+              <p class="email"><a href="mailto:mail@google.com">mail@google.com</a></p>
+            </div>
+            <div class="change-account__btns fx">
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Создать поступление</a>
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Заказ з поступления</a>
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Дублировать</a>
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i>Присвоить</a>
+              <a href="#" class="btn btn_green btn-add flex-center"><i class="btn-add__icon btn-add__icon--white"></i>Сохранить</a>
+            </div>
+          </div>
+          <div class="change-account__box fx">
+            <div class="change-account__tabs">
+              <div class="tabs-nav fx fx-between">
+                <a href="#" class="tabs-nav__item active">Счета</a>
+                <a href="#" class="tabs-nav__item">ПП</a>
+                <a href="#" class="tabs-nav__item">Отгрузка</a>
+                <a href="#" class="tabs-nav__item">Взаиморасчёты</a>
+              </div>
+              <div class="change-account__tabs-content">
+                <ul class="list">
+                  <li class="list__item"><i class="i-check"></i>Все счета покупателя</li>
+                  <li class="list__item"><i class="i-check"></i>Все счета с ИНН покупателя</li>
+                </ul>
+              </div>
+            </div>
+            <form action="#" class="form change-account__price">
+              <p class="title">Уменьшить стоимость</p>
+              <label class="form__field form__field--bb form__field--transparent"><span class="form__name">Позиций на</span><input type="text" value="10" /><span class="form__currency">%</span></label>
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon btn-add__icon--border"></i>добавить</a>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+  </div>
+
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+  <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

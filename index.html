@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Default</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <!-- Fonts END -->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+  <div class="wrapper fx-column">
+    
+    <!-- Header -->
+
+    <header class="header speed">
+      <div class="container fx fx-between align-center">
+
+        <!-- Logo -->
+
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+        </div>
+
+        <!-- Search -->
+
+        <form action="#" class="form search fx align-center">
+          <label class="form__field search__input"><input type="text" placeholder="Введите ID или название" /></label>
+          <label class="form__field select arrow-down">
+            <select>
+              <option>Счета</option>
+              <option>Счета 1</option>
+              <option>Счета 2</option>
+            </select>
+          </label>
+          <button class="search__btn"></button>
+        </form>
+
+        <!-- Panel -->
+        
+        <div class="panel fx align-center">
+          <div class="panel__group fx align-center">
+            <a href="#" class="panel__item pc-hide flex-center">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2 13.8L19.7 18.3C20.1 18.7 20.1 19.3 19.7 19.7C19.5 19.9 19.2 20 19 20C18.8 20 18.5 19.9 18.3 19.7L13.8 15.2C12.3 16.3 10.5 17 8.5 17C3.8 17 0 13.2 0 8.5C0 3.8 3.8 0 8.5 0C13.2 0 17 3.8 17 8.5C17 10.5 16.3 12.4 15.2 13.8ZM8.49999 2C4.89999 2 1.99999 4.9 1.99999 8.5C1.99999 12.1 4.89999 15 8.49999 15C10.3 15 11.9 14.3 13.1 13.1C14.3 11.9 15 10.3 15 8.5C15 4.9 12.1 2 8.49999 2Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item flex-center">
+              <span class="panel__quantity">4</span>
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20C9.55229 20 10 19.5523 10 19V18C10 16.8954 10.8954 16 12 16H16C18.2091 16 20 14.2091 20 12V4C20 1.79086 18.2091 0 16 0H4C1.79086 0 0 1.79086 0 4V12C0 14.2091 1.79086 16 4 16H5C5.55228 16 6 15.5523 6 15C6 14.4477 5.55228 14 5 14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H16C17.1046 2 18 2.89543 18 4V12C18 13.1046 17.1046 14 16 14H12C9.79086 14 8 15.7909 8 18V19C8 19.5523 8.44771 20 9 20ZM9 8C9 8.55229 9.44771 9 10 9C10.5523 9 11 8.55229 11 8C11 7.44772 10.5523 7 10 7C9.44771 7 9 7.44772 9 8ZM6 9C5.44772 9 5 8.55229 5 8C5 7.44772 5.44772 7 6 7C6.55228 7 7 7.44772 7 8C7 8.55229 6.55228 9 6 9ZM13 8C13 8.55229 13.4477 9 14 9C14.5523 9 15 8.55229 15 8C15 7.44772 14.5523 7 14 7C13.4477 7 13 7.44772 13 8Z"/>
+              </svg>
+            </a>
+            <a href="#" class="panel__item tb-hide flex-center active">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4C0 1.79086 1.79086 0 4 0ZM4 2C2.89543 2 2 2.89543 2 4V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V4C18 2.89543 17.1046 2 16 2H4ZM6 15C6.55228 15 7 14.5523 7 14V12C7 11.4477 6.55228 11 6 11C5.44772 11 5 11.4477 5 12V14C5 14.5523 5.44772 15 6 15ZM11 14C11 14.5523 10.5523 15 10 15C9.44771 15 9 14.5523 9 14V9C9 8.44771 9.44771 8 10 8C10.5523 8 11 8.44771 11 9V14ZM14 15C14.5523 15 15 14.5523 15 14V6C15 5.44772 14.5523 5 14 5C13.4477 5 13 5.44772 13 6V14C13 14.5523 13.4477 15 14 15Z"/>
+              </svg>
+            </a>
+            <button class="navbar-toggle">
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+              <span class="icon-bar speed"></span>
+            </button>
+          </div>
+          <div class="user">
+            <a href="#" class="user__info text-right arrow-down">
+              <p class="user__name">Сергей Семенов</p>
+              <p class="user__position">Менеджер</p>
+            </a>
+            <div class="user__nav">
+              <ul class="user__list">
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+                <li class="user__item"><a href="#" class="user__link"><i style="background: url(img/svg/i-account.svg) center no-repeat;"></i>Личные данные</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    
+    <!-- Main -->
+    
+    <main class="main fx">
+      <div class="container fx">
+
+        <!-- Aside -->
+
+        <aside class="aside">
+          <div class="user pc-hide">
+            <a href="#" class="fx align-center">
+              <i class="user__icon"></i>
+              <div class="user__info">
+                <p class="user__name">Сергей Семенов</p>
+                <p class="user__position">Менеджер</p>
+              </div>
+            </a>
+          </div>
+          <ul class="aside__list">
+            <li class="aside__item"><a href="#" class="aside__link active"><i class="aside__icon aside__icon--score"></i>Счета</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--coming"></i>Приход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--consumption"></i>Расход</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--company"></i>Компании</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--bills"></i>Платежки</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--goods"></i>Товары</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--catalog"></i>Каталог</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--transit"></i>Транзит</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--reserve"></i>Резерв</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--cash"></i>Наличные</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--logs"></i>Логи</a></li>
+            <li class="aside__item"><hr></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--users"></i>Пользователи</a></li>
+            <li class="aside__item"><a href="#" class="aside__link"><i class="aside__icon aside__icon--access"></i>Маски доступа</a></li>
+          </ul>
+        </aside>
+
+        <!-- Box -->
+
+        <div class="main__box bills">
+          <div class="head fx fx-between align-center">
+            <div class="head__info fx fx-end align-center">
+              <a href="#" class="btn btn_white btn-add flex-center"><i class="btn-add__icon"></i><span>Добавить</span></a>
+              <a href="#tuning" class="btn-tuning mb-show">
+                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4 0H17.6C20.0301 0 22 1.96995 22 4.4V17.6C22 20.0301 20.0301 22 17.6 22H4.4C1.96995 22 0 20.0301 0 17.6V4.4C0 1.96995 1.96995 0 4.4 0ZM8.8 16.5V10.8122C10.0817 10.3592 11 9.13684 11 7.7C11 5.87746 9.52254 4.4 7.7 4.4C5.87746 4.4 4.4 5.87746 4.4 7.7C4.4 9.13684 5.31829 10.3592 6.6 10.8122V16.5C6.6 17.1075 7.09249 17.6 7.7 17.6C8.30751 17.6 8.8 17.1075 8.8 16.5ZM17.6 14.3C17.6 12.8632 16.6817 11.6408 15.4 11.1878V5.5C15.4 4.89249 14.9075 4.4 14.3 4.4C13.6925 4.4 13.2 4.89249 13.2 5.5V11.1878C11.9183 11.6408 11 12.8632 11 14.3C11 16.1225 12.4775 17.6 14.3 17.6C16.1225 17.6 17.6 16.1225 17.6 14.3ZM2.20054 4.40003C2.20054 3.18501 3.18551 2.20003 4.40054 2.20003H17.6005C18.8156 2.20003 19.8005 3.18501 19.8005 4.40003V17.6C19.8005 18.8151 18.8156 19.8 17.6005 19.8H4.40054C3.18551 19.8 2.20054 18.8151 2.20054 17.6V4.40003ZM7.7 8.8C8.30751 8.8 8.8 8.30751 8.8 7.7C8.8 7.09249 8.30751 6.6 7.7 6.6C7.09249 6.6 6.6 7.09249 6.6 7.7C6.6 8.30751 7.09249 8.8 7.7 8.8ZM15.4005 14.3C15.4005 14.9075 14.908 15.4 14.3005 15.4C13.693 15.4 13.2005 14.9075 13.2005 14.3C13.2005 13.6925 13.693 13.2 14.3005 13.2C14.908 13.2 15.4005 13.6925 15.4005 14.3Z"/>
+                </svg>
+              </a>
+              <div class="form__field form__field--arrow bills__date arrow-down">
+                <input type="text" value="01/11/ 2020 · 01/11/ 2021">
+                <div class="period" style="display: block;">
+                  <div class="period__item">
+                    <p class="period__title">Выберите год</p>
+                    <div class="period__box fx align-center">
+                      <button class="period__btn flex-center">
+                        <svg viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.77333 6.88L8 2.65333L6.12 0.773333L-2.67514e-07 6.88L6.12 13L8 11.1067L3.77333 6.88Z"/>
+                        </svg>
+                      </button>
+                      <span class="period__year">2020</span>
+                      <button class="period__btn flex-center">
+                        <svg viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-8.21774e-08 10.3467L4.22667 6.12002L-4.51684e-07 1.89335L1.88 1.80376e-05L8 6.12002L1.88 12.2267L-8.21774e-08 10.3467Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="period__item period__item--quarter">
+                    <p class="period__title">Укажите квартал</p>
+                    <div class="period__box fx fx-wrap">
+                      <button class="period__btn">1</button>
+                      <button class="period__btn">2</button>
+                      <button class="period__btn">3</button>
+                      <button class="period__btn">4</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#filter" class="btn-filter flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9168 4.25001V8.34338C20.9168 9.38823 20.3946 10.364 19.5253 10.9435L15.5945 13.564C15.015 13.9504 14.6668 14.6009 14.6668 15.2975V16.75C14.6668 19.0512 12.8014 20.9167 10.5002 20.9167C8.19898 20.9167 6.3335 19.0512 6.3335 16.75V15.2975C6.3335 14.6009 5.98537 13.9504 5.40579 13.564L1.47506 10.9435C0.605687 10.364 0.0834961 9.38823 0.0834961 8.34338V4.25001C0.0834961 1.63881 4.74989 0.0833435 10.5002 0.0833435C16.2504 0.0833435 20.9168 1.63881 20.9168 4.25001ZM2.16667 6.88301V8.34335C2.16667 8.69164 2.34073 9.01688 2.63052 9.21007L6.56125 11.8306C7.72041 12.6033 8.41667 13.9043 8.41667 15.2974V16.75C8.41667 17.9006 9.34941 18.8333 10.5 18.8333C11.6506 18.8333 12.5833 17.9006 12.5833 16.75V15.2974C12.5833 13.9043 13.2796 12.6033 14.4387 11.8306L18.3695 9.21007C18.6593 9.01688 18.8333 8.69164 18.8333 8.34335V6.88301C16.9324 7.87081 13.9064 8.41665 10.5 8.41665C7.09362 8.41665 4.0676 7.87081 2.16667 6.88301ZM18.8333 4.25C18.8333 5.09058 15.1051 6.33333 10.5 6.33333C5.89494 6.33333 2.16667 5.09058 2.16667 4.25C2.16667 3.40942 5.89494 2.16667 10.5 2.16667C15.1051 2.16667 18.8333 3.40942 18.8333 4.25Z"/>
+                </svg>
+                <span>Фильтр</span>
+              </a>
+            </div>
+            <div class="tabs-nav fx">
+              <a href="#" class="tabs-nav__item active">Счета</a>
+              <a href="#" class="tabs-nav__item">Проблемные</a>
+              <a href="#" class="tabs-nav__item">Архив</a>
+            </div>
+            <form action="#" class="form tuning pop-up" id="tuning">
+              <a href="#close" class="pop-up__bg"></a>
+              <a href="#close" class="pop-up__close">
+                <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 6.17417L13.3996 0.274587C13.7657 -0.0915291 14.3593 -0.0915291 14.7254 0.274587C15.0915 0.640704 15.0915 1.2343 14.7254 1.60041L8.82582 7.5L14.7254 13.3996C15.0915 13.7657 15.0915 14.3593 14.7254 14.7254C14.3593 15.0915 13.7657 15.0915 13.3996 14.7254L7.5 8.82582L1.60041 14.7254C1.2343 15.0915 0.640704 15.0915 0.274587 14.7254C-0.0915291 14.3593 -0.0915291 13.7657 0.274587 13.3996L6.17417 7.5L0.274587 1.60041C-0.0915291 1.2343 -0.0915291 0.640704 0.274587 0.274587C0.640704 -0.0915291 1.2343 -0.0915291 1.60041 0.274587L7.5 6.17417Z"/>
+                </svg>
+              </a>
+              <div class="pop-up__wrap">
+                <div class="tuning__box">
+                  <p class="tuning__title">Отображение столбцов</p>
+                  <div class="tuning__double fx fx-wrap">
+                    <div class="check">
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" checked />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Иконка</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Счет №</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Имя менеджера</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Закупка / Расходы</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Продавец</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Услуг / оказано</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Услуги / с-ф</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Заработано</span>
+                      </label>
+                    </div>
+                    <div class="check">
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Изменён</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Печатные формы</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Заметка</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Текст заметки</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Порядок количества (Всего / отгружено)</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="columns" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Промежуточные суммы цветовых групп</span>
+                      </label> 
+                    </div>
+                  </div>
+                </div>
+                <div class="tuning__box">
+                  <p class="tuning__title">Счета менеджеров:</p>
+                  <div class="tuning__double fx fx-wrap">
+                    <div class="check">
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" checked />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Волошин Дмитрий</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Громов Илья</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Кобышев Александр</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Маркушев Иван</span>
+                      </label>
+                    </div>
+                    <div class="check">
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Волошин Дмитрий</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Громов Илья</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Кобышев Александр</span>
+                      </label>
+                      <label class="check__item fx align-center">
+                        <input type="checkbox" name="managers" />
+                        <span class="check__mark"></span>
+                        <span class="check__name">Маркушев Иван</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tuning__box">
+                  <p class="tuning__title">Сортировать</p>
+                  <div class="tuning__group fx fx-between fx-wrap">
+                    <div class="form__field select arrow-down">
+                      <select>
+                        <option>По умолчанию</option>
+                        <option>По умолчанию 1</option>
+                        <option>По умолчанию 2</option>
+                      </select>
+                    </div>
+                    <div class="form__field select arrow-down">
+                      <select>
+                        <option>По убыванию</option>
+                        <option>По убыванию 1</option>
+                        <option>По убыванию 2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <p class="tuning__btn text-center"><a href="#" class="btn btn_green">Сохранить</a></p>
+              </div>
+            </form>
+            <div class="filter pop-up" id="filter">
+              <a href="#close" class="pop-up__bg"></a>
+              <a href="#close" class="pop-up__close">
+                <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 6.17417L13.3996 0.274587C13.7657 -0.0915291 14.3593 -0.0915291 14.7254 0.274587C15.0915 0.640704 15.0915 1.2343 14.7254 1.60041L8.82582 7.5L14.7254 13.3996C15.0915 13.7657 15.0915 14.3593 14.7254 14.7254C14.3593 15.0915 13.7657 15.0915 13.3996 14.7254L7.5 8.82582L1.60041 14.7254C1.2343 15.0915 0.640704 15.0915 0.274587 14.7254C-0.0915291 14.3593 -0.0915291 13.7657 0.274587 13.3996L6.17417 7.5L0.274587 1.60041C-0.0915291 1.2343 -0.0915291 0.640704 0.274587 0.274587C0.640704 -0.0915291 1.2343 -0.0915291 1.60041 0.274587L7.5 6.17417Z"/>
+                </svg>
+              </a>
+              <div class="pop-up__wrap">
+                <form action="#" class="form filter__form">
+                  <label class="form__field form__field--bb"><input type="text" placeholder="Продавец" /></label>
+                  <label class="form__field form__field--bb"><input type="text" placeholder="Покупатель " /></label>
+                  <div class="filter__setting">
+                    <div class="form__field select arrow-down">
+                      <select>
+                        <option>Менеджер</option>
+                        <option>Менеджер 1</option>
+                        <option>Менеджер 2</option>
+                      </select>
+                    </div>
+                    <div class="filter__group fx fx-between fx-wrap">
+                      <label class="form__field form__field--date"><input type="text" placeholder="Период c" /></label>
+                      <label class="form__field form__field--date"><input type="text" placeholder="Период по " /></label>
+                    </div>
+                    <div class="form__field select arrow-down">
+                      <select>
+                        <option>Оплаченные</option>
+                        <option>Оплаченные 1</option>
+                        <option>Оплаченные 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter__radios">
+                    <div class="filter__radio">
+                      <p class="filter__title">Закупленные</p>
+                      <div class="check radio fx fx-wrap align-center">
+                        <label class="check__item align-center">
+                          <input type="radio" name="purchased" checked />
+                          <span class="check__mark"></span>
+                          <span class="check__name">не важно</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="purchased" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">закупленные</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="purchased" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">незакупленные</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="filter__radio">
+                      <p class="filter__title">Отгруженные</p>
+                      <div class="check radio fx fx-wrap align-center">
+                        <label class="check__item align-center">
+                          <input type="radio" name="shipped" checked />
+                          <span class="check__mark"></span>
+                          <span class="check__name">не важно</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="shipped" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">закупленные</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="shipped" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">незакупленные</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="filter__radio">
+                      <p class="filter__title">Закрытые</p>
+                      <div class="check radio fx fx-wrap align-center">
+                        <label class="check__item align-center">
+                          <input type="radio" name="closed" checked />
+                          <span class="check__mark"></span>
+                          <span class="check__name">не важно</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="closed" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">закупленные</span>
+                        </label>
+                        <label class="check__item align-center">
+                          <input type="radio" name="closed" />
+                          <span class="check__mark"></span>
+                          <span class="check__name">незакупленные</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="filter__btn text-center"><a href="#" class="btn btn_green">Фильтровать</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="table__wrap">
+              <ul class="table__case table__case-slide">
+                <li class="table__head">
+                  <div class="cell cell_1">
+                    <a href="#tuning" class="btn-tuning">
+                      <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4 0H17.6C20.0301 0 22 1.96995 22 4.4V17.6C22 20.0301 20.0301 22 17.6 22H4.4C1.96995 22 0 20.0301 0 17.6V4.4C0 1.96995 1.96995 0 4.4 0ZM8.8 16.5V10.8122C10.0817 10.3592 11 9.13684 11 7.7C11 5.87746 9.52254 4.4 7.7 4.4C5.87746 4.4 4.4 5.87746 4.4 7.7C4.4 9.13684 5.31829 10.3592 6.6 10.8122V16.5C6.6 17.1075 7.09249 17.6 7.7 17.6C8.30751 17.6 8.8 17.1075 8.8 16.5ZM17.6 14.3C17.6 12.8632 16.6817 11.6408 15.4 11.1878V5.5C15.4 4.89249 14.9075 4.4 14.3 4.4C13.6925 4.4 13.2 4.89249 13.2 5.5V11.1878C11.9183 11.6408 11 12.8632 11 14.3C11 16.1225 12.4775 17.6 14.3 17.6C16.1225 17.6 17.6 16.1225 17.6 14.3ZM2.20054 4.40003C2.20054 3.18501 3.18551 2.20003 4.40054 2.20003H17.6005C18.8156 2.20003 19.8005 3.18501 19.8005 4.40003V17.6C19.8005 18.8151 18.8156 19.8 17.6005 19.8H4.40054C3.18551 19.8 2.20054 18.8151 2.20054 17.6V4.40003ZM7.7 8.8C8.30751 8.8 8.8 8.30751 8.8 7.7C8.8 7.09249 8.30751 6.6 7.7 6.6C7.09249 6.6 6.6 7.09249 6.6 7.7C6.6 8.30751 7.09249 8.8 7.7 8.8ZM15.4005 14.3C15.4005 14.9075 14.908 15.4 14.3005 15.4C13.693 15.4 13.2005 14.9075 13.2005 14.3C13.2005 13.6925 13.693 13.2 14.3005 13.2C14.908 13.2 15.4005 13.6925 15.4005 14.3Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="cell cell_2">Счет №</div>
+                  <div class="table__box">
+                    <div class="cell cell_3">От</div>
+                    <div class="cell cell_4">На сумму</div>
+                    <div class="cell cell_5">Закупка</div>
+                    <div class="cell cell_6">Расходы</div>
+                    <div class="cell cell_7">Покупатель</div>
+                    <div class="cell cell_8">Оплата</div>
+                    <div class="cell cell_9">Товаров <br />отгружено</div>
+                    <div class="cell cell_10">Услуг <br />Оказано</div>
+                    <div class="cell cell_11">Отгрузка <br />с-ф</div>
+                    <div class="cell cell_12">Услуги <br />с-ф</div>
+                    <div class="cell cell_13">Изменен</div>
+                    <div class="cell cell_14">Доход</div>
+                  </div>
+                </li>
+                <li class="table__item open">
+                  <div class="cell cell_1">
+                    <span class="table__icon flex-center table__icon--red">
+                      <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.5C3.75 1.08579 4.08579 0.75 4.5 0.75C4.91421 0.75 5.25 1.08579 5.25 1.5V3.75C5.25 4.16421 4.91421 4.5 4.5 4.5C4.08579 4.5 3.75 4.16421 3.75 3.75V1.5ZM14.25 11.9731V7.49083C14.7492 7.53768 15.3997 7.70517 15.8838 8.20969C16.7865 9.15039 16.4114 10.4086 16.4114 10.4086C16.4114 10.4086 16.0315 11.5002 15.0108 11.8914C14.686 11.9289 14.4382 11.955 14.25 11.9731ZM14.2425 13.4965C14.1152 15.5908 12.3764 17.25 10.25 17.25H4.75C2.54086 17.25 0.75 15.4591 0.75 13.25V6H13.5H14.25H14.3097C14.5469 6 14.6892 6.02594 14.8778 6.06033C14.9485 6.07322 15.0257 6.0873 15.1169 6.10165C16.9014 6.38365 17.7631 8.26759 17.9281 9C18.093 9.73241 18 11.0348 17.0427 12.2477C16.1987 13.3171 14.6073 13.4743 14.2425 13.4965ZM12.75 7.5H2.25V12.75C2.25 14.4069 3.59315 15.75 5.25 15.75H9.75C11.4069 15.75 12.75 14.4069 12.75 12.75V7.5ZM7.5 0.75C7.08579 0.75 6.75 1.08579 6.75 1.5V3.75C6.75 4.16421 7.08579 4.5 7.5 4.5C7.91421 4.5 8.25 4.16421 8.25 3.75V1.5C8.25 1.08579 7.91421 0.75 7.5 0.75ZM9.75 1.5C9.75 1.08579 10.0858 0.75 10.5 0.75C10.9142 0.75 11.25 1.08579 11.25 1.5V3.75C11.25 4.16421 10.9142 4.5 10.5 4.5C10.0858 4.5 9.75 4.16421 9.75 3.75V1.5Z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total table__item--red">
+                  <div class="cell cell_1 mb-hide"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счетов</span>
+                    <span><span class="mb-hide">Всего:</span> 8</span>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3 mb-hide"></div>
+                    <div class="cell cell_4"><span class="table__name">Сумма</span>155 642,00</div>
+                    <div class="cell cell_6 mb-hide"></div>
+                    <div class="cell cell_7 mb-hide"></div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span>16 976,94</div>
+                    <div class="cell cell_9"><span class="table__name">Отгружено товаров</span>20 / 20</div>
+                    <div class="cell cell_10"><span class="table__name">Оказано услуг</span>0 / 0</div>
+                    <div class="cell cell_11 mb-hide"></div>
+                    <div class="cell cell_12 text-center mb-hide"></div>
+                    <div class="cell cell_13 mb-hide"></div>
+                    <div class="cell cell_14 mb-hide"></div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1">
+                    <span class="table__icon flex-center table__icon--green">
+                      <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.5C3.75 1.08579 4.08579 0.75 4.5 0.75C4.91421 0.75 5.25 1.08579 5.25 1.5V3.75C5.25 4.16421 4.91421 4.5 4.5 4.5C4.08579 4.5 3.75 4.16421 3.75 3.75V1.5ZM14.25 11.9731V7.49083C14.7492 7.53768 15.3997 7.70517 15.8838 8.20969C16.7865 9.15039 16.4114 10.4086 16.4114 10.4086C16.4114 10.4086 16.0315 11.5002 15.0108 11.8914C14.686 11.9289 14.4382 11.955 14.25 11.9731ZM14.2425 13.4965C14.1152 15.5908 12.3764 17.25 10.25 17.25H4.75C2.54086 17.25 0.75 15.4591 0.75 13.25V6H13.5H14.25H14.3097C14.5469 6 14.6892 6.02594 14.8778 6.06033C14.9485 6.07322 15.0257 6.0873 15.1169 6.10165C16.9014 6.38365 17.7631 8.26759 17.9281 9C18.093 9.73241 18 11.0348 17.0427 12.2477C16.1987 13.3171 14.6073 13.4743 14.2425 13.4965ZM12.75 7.5H2.25V12.75C2.25 14.4069 3.59315 15.75 5.25 15.75H9.75C11.4069 15.75 12.75 14.4069 12.75 12.75V7.5ZM7.5 0.75C7.08579 0.75 6.75 1.08579 6.75 1.5V3.75C6.75 4.16421 7.08579 4.5 7.5 4.5C7.91421 4.5 8.25 4.16421 8.25 3.75V1.5C8.25 1.08579 7.91421 0.75 7.5 0.75ZM9.75 1.5C9.75 1.08579 10.0858 0.75 10.5 0.75C10.9142 0.75 11.25 1.08579 11.25 1.5V3.75C11.25 4.16421 10.9142 4.5 10.5 4.5C10.0858 4.5 9.75 4.16421 9.75 3.75V1.5Z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total table__item--green">
+                  <div class="cell cell_1 mb-hide"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счетов</span>
+                    <span><span class="mb-hide">Всего:</span> 8</span>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3 mb-hide"></div>
+                    <div class="cell cell_4"><span class="table__name">Сумма</span>155 642,00</div>
+                    <div class="cell cell_6 mb-hide"></div>
+                    <div class="cell cell_7 mb-hide"></div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span>16 976,94</div>
+                    <div class="cell cell_9"><span class="table__name">Отгружено товаров</span>20 / 20</div>
+                    <div class="cell cell_10"><span class="table__name">Оказано услуг</span>0 / 0</div>
+                    <div class="cell cell_11 mb-hide"></div>
+                    <div class="cell cell_12 text-center mb-hide"></div>
+                    <div class="cell cell_13 mb-hide"></div>
+                    <div class="cell cell_14 mb-hide"></div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1">
+                    <span class="table__icon flex-center table__icon--blue">
+                      <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.5C3.75 1.08579 4.08579 0.75 4.5 0.75C4.91421 0.75 5.25 1.08579 5.25 1.5V3.75C5.25 4.16421 4.91421 4.5 4.5 4.5C4.08579 4.5 3.75 4.16421 3.75 3.75V1.5ZM14.25 11.9731V7.49083C14.7492 7.53768 15.3997 7.70517 15.8838 8.20969C16.7865 9.15039 16.4114 10.4086 16.4114 10.4086C16.4114 10.4086 16.0315 11.5002 15.0108 11.8914C14.686 11.9289 14.4382 11.955 14.25 11.9731ZM14.2425 13.4965C14.1152 15.5908 12.3764 17.25 10.25 17.25H4.75C2.54086 17.25 0.75 15.4591 0.75 13.25V6H13.5H14.25H14.3097C14.5469 6 14.6892 6.02594 14.8778 6.06033C14.9485 6.07322 15.0257 6.0873 15.1169 6.10165C16.9014 6.38365 17.7631 8.26759 17.9281 9C18.093 9.73241 18 11.0348 17.0427 12.2477C16.1987 13.3171 14.6073 13.4743 14.2425 13.4965ZM12.75 7.5H2.25V12.75C2.25 14.4069 3.59315 15.75 5.25 15.75H9.75C11.4069 15.75 12.75 14.4069 12.75 12.75V7.5ZM7.5 0.75C7.08579 0.75 6.75 1.08579 6.75 1.5V3.75C6.75 4.16421 7.08579 4.5 7.5 4.5C7.91421 4.5 8.25 4.16421 8.25 3.75V1.5C8.25 1.08579 7.91421 0.75 7.5 0.75ZM9.75 1.5C9.75 1.08579 10.0858 0.75 10.5 0.75C10.9142 0.75 11.25 1.08579 11.25 1.5V3.75C11.25 4.16421 10.9142 4.5 10.5 4.5C10.0858 4.5 9.75 4.16421 9.75 3.75V1.5Z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total table__item--blue">
+                  <div class="cell cell_1 mb-hide"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счетов</span>
+                    <span><span class="mb-hide">Всего:</span> 8</span>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3 mb-hide"></div>
+                    <div class="cell cell_4"><span class="table__name">Сумма</span>155 642,00</div>
+                    <div class="cell cell_6 mb-hide"></div>
+                    <div class="cell cell_7 mb-hide"></div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span>16 976,94</div>
+                    <div class="cell cell_9"><span class="table__name">Отгружено товаров</span>20 / 20</div>
+                    <div class="cell cell_10"><span class="table__name">Оказано услуг</span>0 / 0</div>
+                    <div class="cell cell_11 mb-hide"></div>
+                    <div class="cell cell_12 text-center mb-hide"></div>
+                    <div class="cell cell_13 mb-hide"></div>
+                    <div class="cell cell_14 mb-hide"></div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1">
+                    <span class="table__icon flex-center table__icon--yellow">
+                      <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.5C3.75 1.08579 4.08579 0.75 4.5 0.75C4.91421 0.75 5.25 1.08579 5.25 1.5V3.75C5.25 4.16421 4.91421 4.5 4.5 4.5C4.08579 4.5 3.75 4.16421 3.75 3.75V1.5ZM14.25 11.9731V7.49083C14.7492 7.53768 15.3997 7.70517 15.8838 8.20969C16.7865 9.15039 16.4114 10.4086 16.4114 10.4086C16.4114 10.4086 16.0315 11.5002 15.0108 11.8914C14.686 11.9289 14.4382 11.955 14.25 11.9731ZM14.2425 13.4965C14.1152 15.5908 12.3764 17.25 10.25 17.25H4.75C2.54086 17.25 0.75 15.4591 0.75 13.25V6H13.5H14.25H14.3097C14.5469 6 14.6892 6.02594 14.8778 6.06033C14.9485 6.07322 15.0257 6.0873 15.1169 6.10165C16.9014 6.38365 17.7631 8.26759 17.9281 9C18.093 9.73241 18 11.0348 17.0427 12.2477C16.1987 13.3171 14.6073 13.4743 14.2425 13.4965ZM12.75 7.5H2.25V12.75C2.25 14.4069 3.59315 15.75 5.25 15.75H9.75C11.4069 15.75 12.75 14.4069 12.75 12.75V7.5ZM7.5 0.75C7.08579 0.75 6.75 1.08579 6.75 1.5V3.75C6.75 4.16421 7.08579 4.5 7.5 4.5C7.91421 4.5 8.25 4.16421 8.25 3.75V1.5C8.25 1.08579 7.91421 0.75 7.5 0.75ZM9.75 1.5C9.75 1.08579 10.0858 0.75 10.5 0.75C10.9142 0.75 11.25 1.08579 11.25 1.5V3.75C11.25 4.16421 10.9142 4.5 10.5 4.5C10.0858 4.5 9.75 4.16421 9.75 3.75V1.5Z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total table__item--yellow">
+                  <div class="cell cell_1 mb-hide"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счетов</span>
+                    <span><span class="mb-hide">Всего:</span> 8</span>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3 mb-hide"></div>
+                    <div class="cell cell_4"><span class="table__name">Сумма</span>155 642,00</div>
+                    <div class="cell cell_6 mb-hide"></div>
+                    <div class="cell cell_7 mb-hide"></div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span>16 976,94</div>
+                    <div class="cell cell_9"><span class="table__name">Отгружено товаров</span>20 / 20</div>
+                    <div class="cell cell_10"><span class="table__name">Оказано услуг</span>0 / 0</div>
+                    <div class="cell cell_11 mb-hide"></div>
+                    <div class="cell cell_12 text-center mb-hide"></div>
+                    <div class="cell cell_13 mb-hide"></div>
+                    <div class="cell cell_14 mb-hide"></div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total-main">
+                  <div class="table__cell"><span>Всего счетов:</span><strong>8</strong></div>
+                  <div class="table__cell"><span>Доход составил:</span><strong>73582.02</strong></div>
+                </li>
+              </ul>
+              <div class="total fx fx-between align-center">
+                <div class="total__cell total__cell_1">
+                  <div class="total__one fx align-center">
+                    <i class="total__icon"></i>
+                    <div class="total__info">
+                      <p class="total__year">2021 год</p>
+                      <p class="total__score">Счетов: 215</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="total__cell total__cell_2"><span>Сумма:</span>6 226 339,00</div>
+                <div class="total__cell total__cell_3"><span>Закупка:</span>58 501,00</div>
+                <div class="total__cell total__cell_4"><span>Оплата:</span>2 266 000,04</div>
+                <div class="total__cell total__cell_5"><span>Отгружено:</span>500 / 206</div>
+                <div class="total__cell total__cell_6"><span>Оказано услуг:</span>1 / 0</div>
+                <div class="total__cell total__cell_7"><span>Заработано:</span>75 637,64</div>
+              </div>
+              <div class="month-nav fx fx-wrap">
+                <a href="#" class="month-nav__item active">Март</a>
+                <a href="#" class="month-nav__item">Февраль</a>
+                <a href="#" class="month-nav__item">Январь</a>
+              </div>
+              <ul class="table__case table__case-slide">
+                <li class="table__item">
+                  <div class="cell cell_1">
+                    <span class="table__icon flex-center table__icon--gray">
+                      <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 1.5C3.75 1.08579 4.08579 0.75 4.5 0.75C4.91421 0.75 5.25 1.08579 5.25 1.5V3.75C5.25 4.16421 4.91421 4.5 4.5 4.5C4.08579 4.5 3.75 4.16421 3.75 3.75V1.5ZM14.25 11.9731V7.49083C14.7492 7.53768 15.3997 7.70517 15.8838 8.20969C16.7865 9.15039 16.4114 10.4086 16.4114 10.4086C16.4114 10.4086 16.0315 11.5002 15.0108 11.8914C14.686 11.9289 14.4382 11.955 14.25 11.9731ZM14.2425 13.4965C14.1152 15.5908 12.3764 17.25 10.25 17.25H4.75C2.54086 17.25 0.75 15.4591 0.75 13.25V6H13.5H14.25H14.3097C14.5469 6 14.6892 6.02594 14.8778 6.06033C14.9485 6.07322 15.0257 6.0873 15.1169 6.10165C16.9014 6.38365 17.7631 8.26759 17.9281 9C18.093 9.73241 18 11.0348 17.0427 12.2477C16.1987 13.3171 14.6073 13.4743 14.2425 13.4965ZM12.75 7.5H2.25V12.75C2.25 14.4069 3.59315 15.75 5.25 15.75H9.75C11.4069 15.75 12.75 14.4069 12.75 12.75V7.5ZM7.5 0.75C7.08579 0.75 6.75 1.08579 6.75 1.5V3.75C6.75 4.16421 7.08579 4.5 7.5 4.5C7.91421 4.5 8.25 4.16421 8.25 3.75V1.5C8.25 1.08579 7.91421 0.75 7.5 0.75ZM9.75 1.5C9.75 1.08579 10.0858 0.75 10.5 0.75C10.9142 0.75 11.25 1.08579 11.25 1.5V3.75C11.25 4.16421 10.9142 4.5 10.5 4.5C10.0858 4.5 9.75 4.16421 9.75 3.75V1.5Z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item">
+                  <div class="cell cell_1"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счет №</span>
+                    <div class="table__num fx">
+                      <a href="#" class="fx align-center">14747<span class="edit speed"></span></a>
+                    </div>
+                    <p class="client-name"><a href="#">Чекурин Владимир</a></p>
+                    <div class="docks">
+                      <p class="docks__item"><i class="docks__icon docks__icon--account"></i>
+                        <span class="docks__name">Счет:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                      <p class="docks__item"><i class="docks__icon docks__icon--contract"></i>
+                        <span class="docks__name">Договор:</span><a href="#">с печатью</a><span class="docks__dots">·</span><a href="#">без печати</a>
+                      </p>
+                    </div>
+                    <a href="#" class="btn-details"></a>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3"><span class="table__name">От</span>26.03.21</div>
+                    <div class="cell cell_4"><span class="table__name">На сумму</span>8 070,00</div>
+                    <div class="cell cell_5"><span class="table__name">Закупка</span>0,00</div>
+                    <div class="cell cell_6"><span class="table__name">Расходы</span>0,00</div>
+                    <div class="cell cell_7"><span class="table__name">Покупатель</span>Сервис-Енисей Плюс (ООО)</div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span><div>10 228,80<p class="red">15490</p></div></div>
+                    <div class="cell cell_9"><span class="table__name">Товаров <br />отгружено</span><div><p class="green">отгружено</p>1 / 1</div></div>
+                    <div class="cell cell_10"><span class="table__name">Услуг <br />Оказано</span>1 / 1</div>
+                    <div class="cell cell_11"><span class="table__name">Отгрузка <br />с-ф</span>26.03.21</div>
+                    <div class="cell cell_12 text-center"><span class="table__name">Услуги <br />с-ф</span>-</div>
+                    <div class="cell cell_13"><span class="table__name">Изменен</span><div>26.03.21<p>09:23</p></div></div>
+                    <div class="cell cell_14"><span class="table__name">Доход</span>1 249,73</div>
+                  </div>
+                </li>
+                <li class="table__item table__item--total table__item--gray">
+                  <div class="cell cell_1 mb-hide"></div>
+                  <div class="cell cell_2">
+                    <span class="table__name">Счетов</span>
+                    <span><span class="mb-hide">Всего:</span> 8</span>
+                  </div>
+                  <div class="table__box">
+                    <div class="cell cell_3 mb-hide"></div>
+                    <div class="cell cell_4"><span class="table__name">Сумма</span>155 642,00</div>
+                    <div class="cell cell_6 mb-hide"></div>
+                    <div class="cell cell_7 mb-hide"></div>
+                    <div class="cell cell_8"><span class="table__name">Оплата</span>16 976,94</div>
+                    <div class="cell cell_9"><span class="table__name">Отгружено товаров</span>20 / 20</div>
+                    <div class="cell cell_10"><span class="table__name">Оказано услуг</span>0 / 0</div>
+                    <div class="cell cell_11 mb-hide"></div>
+                    <div class="cell cell_12 text-center mb-hide"></div>
+                    <div class="cell cell_13 mb-hide"></div>
+                    <div class="cell cell_14 mb-hide"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+  </div>
+
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+  <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
